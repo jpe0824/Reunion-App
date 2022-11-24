@@ -1,12 +1,14 @@
-<div class="container mt-3">
+<div>
   <div class="page-header container-fluid border-bottom sticky-top">
     <div class="row">
-      <h1 class="col">Meldrum Family Reunion '23</h1>
+      <h1 class="col mt-3">Meldrum Family Reunion '23</h1>
       <div class="col-auto">
-        <app-rsvp class="float-end"></app-rsvp>
+        <app-rsvp class="float-end mt-4 mb-4"></app-rsvp>
       </div>
     </div>
   </div>
+
+  <img src="../assets/pexels-todd-trapani-3593865.jpg" class="img-fluid" alt="tree.jpg">
 
   <div class="mt-3 rounded">
     <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
@@ -68,3 +70,20 @@
     </ngb-accordion>
   </div>
 </div>
+<footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <span class="mb-3 mb-md-0 text-muted">By Jason Edman, 2022</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3">
+      <a href="mailto:jason.e24@gmail.com" class="text-muted">
+        <i class="bi bi-envelope-at-fill"></i>
+      </a>
+    </li>
+    <li class="ms-3">
+      <a href="https://github.com/jpe0824" class="text-muted">
+        <i class="bi bi-github"></i>
+      </a>
+    </li>
+  </ul>
+</footer>

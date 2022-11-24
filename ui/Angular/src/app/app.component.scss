@@ -4,11 +4,22 @@
   flex-direction: column;
 }
 
-.page-header {
+.row {
   background-color: white;
 }
 
 .section-header {
   font-size: x-large;
   font-weight:400;
+}
+
+img {
+  max-height: auto;
+  max-width: 100%;
+}
+
+footer {
+  i {
+    font-size: x-large;
+  }
 }
