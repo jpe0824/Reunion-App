@@ -5,14 +5,66 @@
   </div>
   <div class="modal-body">
     <form>
-      <div class="input-group">
-        <input id="name" class="form-control" placeholder="Name" name="name">
-        <input id="number" class="form-control" placeholder="Number" name="number">
+      <span>Name</span>
+      <div class="input-group mb-3">
+        <input id="first-name" class="form-control" placeholder="First" name="name">
+        <input id="last-name" class="form-control" placeholder="Last" name="name">
+      </div>
+      <div class="mb-3">
+        <span>Number attending:</span>
+      </div>
+      <div class="form-group mb-2">
+        <label for="expedition-island">Expedition Island (July 15)</label>
+        <select class="form-control" id="expedition-island">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10+</option>
+        </select>
+      </div>
+      <div class="form-group mb-2">
+        <label for="flaming-gorge">Flaming Gorge (July 14)</label>
+        <select class="form-control" id="flaming-gorge">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10+</option>
+        </select>
+      </div>
+      <div class="form-group mb-2">
+        <label for="martins-cove">Martin's Cove (July 13)</label>
+        <select class="form-control" id="martins-cove">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10+</option>
+        </select>
       </div>
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    <button type="submit" class="btn btn-primary" (click)="modal.close('Save click')">Submit</button>
   </div>
 </ng-template>
 
