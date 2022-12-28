@@ -4,18 +4,22 @@
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">
-    <form>
+    <form action="https://getform.io/f/fd8abdba-266a-49e3-8376-b2a3907cd538" method="POST">
       <span>Name</span>
       <div class="input-group mb-3">
-        <input id="first-name" class="form-control" placeholder="First" name="name">
-        <input id="last-name" class="form-control" placeholder="Last" name="name">
+        <input type="text" id="first-name" class="form-control" placeholder="First" name="first-name"
+          required oninvalid="this.setCustomValidity('First Name Required.')"
+          oninput="this.setCustomValidity('')">
+        <input type="text" id="last-name" class="form-control" placeholder="Last" name="last-name"
+          required oninvalid="this.setCustomValidity('Last Name Required.')"
+          oninput="this.setCustomValidity('')">
       </div>
       <div class="mb-3">
         <span>Number attending:</span>
       </div>
       <div class="form-group mb-2">
         <label for="expedition-island">Expedition Island (July 15)</label>
-        <select class="form-control" id="expedition-island">
+        <select class="form-control" id="expedition-island" name="expedition-island">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -31,7 +35,7 @@
       </div>
       <div class="form-group mb-2">
         <label for="flaming-gorge">Flaming Gorge (July 14)</label>
-        <select class="form-control" id="flaming-gorge">
+        <select class="form-control" id="flaming-gorge" name="flaming-gorge">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -47,7 +51,7 @@
       </div>
       <div class="form-group mb-2">
         <label for="martins-cove">Martin's Cove (July 13)</label>
-        <select class="form-control" id="martins-cove">
+        <select class="form-control" id="martins-cove" name="martins-cove">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -61,11 +65,12 @@
           <option>10+</option>
         </select>
       </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" (click)="closeModal()">Submit</button>
+      </div>
     </form>
   </div>
-  <div class="modal-footer">
-    <button type="submit" class="btn btn-primary" (click)="modal.close('Save click')">Submit</button>
-  </div>
+
 </ng-template>
 
 <button class="btn btn-lg btn-primary pull-right" (click)="open(content)">RSVP</button>

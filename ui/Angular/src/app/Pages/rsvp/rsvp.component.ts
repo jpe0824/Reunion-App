@@ -10,13 +10,18 @@ export class RsvpComponent implements OnInit {
 
   constructor(
     private modalService: NgbModal
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
   }
 
   open(content: any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'})
+  }
+
+  closeModal() {
+    
   }
 
 }
