@@ -12,4 +12,7 @@ export class WhatComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public isCollapsed = false;
+
+  active = 1;
 }
