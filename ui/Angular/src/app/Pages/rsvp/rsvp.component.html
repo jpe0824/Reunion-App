@@ -4,7 +4,7 @@
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">
-    <form action="https://getform.io/f/fd8abdba-266a-49e3-8376-b2a3907cd538" method="POST">
+    <form id="formGroup" action="https://getform.io/f/fd8abdba-266a-49e3-8376-b2a3907cd538" method="POST">
       <span>Name</span>
       <div class="input-group mb-3">
         <input type="text" id="first-name" class="form-control" placeholder="First" name="first-name"
@@ -66,7 +66,7 @@
         </select>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary" (click)="closeModal()">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
       </div>
     </form>
   </div>

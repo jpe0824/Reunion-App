@@ -7,6 +7,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./rsvp.component.scss']
 })
 export class RsvpComponent implements OnInit {
+  formGroup = document.getElementById('formGroup');
 
   constructor(
     private modalService: NgbModal
@@ -14,14 +15,22 @@ export class RsvpComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    addEventListener("submit", (event) => {
+      if(event) {
+        console.log('event occured');
+        this.closeModal();
+      }
+    })
   }
+
+
 
   open(content: any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'})
   }
 
   closeModal() {
-    
+    this.modalService.dismissAll();
   }
 
 }
