@@ -1,0 +1,28 @@
+@import "variables";
+
+@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+@media(prefers-color-scheme: dark) {
+  body, .row, .card, .modal-body, .modal-header,
+  .form-control, .form-control:focus, .form-control:valid
+  {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+
+    .modal-body, .modal-header {
+      opacity: 95%;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--bs-light);
+    -webkit-box-shadow: 0 0 0px 1000px var(--bs-dark) inset;
+    transition: background-color 5000s ease-in-out 0s;
+
+  }
+
+}

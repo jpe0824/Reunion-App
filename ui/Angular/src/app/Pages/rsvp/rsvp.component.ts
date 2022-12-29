@@ -17,7 +17,6 @@ export class RsvpComponent implements OnInit {
   ngOnInit(): void {
     addEventListener("submit", (event) => {
       if(event) {
-        console.log('event occured');
         this.closeModal();
       }
     })
