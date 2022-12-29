@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RsvpComponent } from './pages/rsvp/rsvp.component';
-import { WhoComponent } from './pages/who/who.component';
-import { WhatComponent } from './pages/what/what.component';
-import { WhenComponent } from './pages/when/when.component';
-import { WhereComponent } from './pages/where/where.component';
-import { FaqsComponent } from './pages/faqs/faqs.component';
+import { RsvpComponent } from './Pages/rsvp/rsvp.component';
+import { WhoComponent } from './Pages/who/who.component';
+import { WhatComponent } from './Pages/what/what.component';
+import { WhenComponent } from './Pages/when/when.component';
+import { WhereComponent } from './Pages/where/where.component';
+import { FaqsComponent } from './Pages/faqs/faqs.component';
 
 @NgModule({
   declarations: [
