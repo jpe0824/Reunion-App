@@ -11,19 +11,24 @@
   <img src="../assets/flamingGorge.jpg" class="img-fluid" alt="tree.jpg">
   <div class="card">
   <div class="card-body">
-    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-      <ngb-panel>
+    <ngb-accordion [closeOthers]="true" #acc="ngbAccordion" activeIds="ngb-panel-0">
+
+      <ngb-panel id="ngb-panel-0">
+
         <ng-template ngbPanelTitle>
           <div class="section-header d-flex">
             <i class="bi bi-info-circle-fill text-primary"></i>
             <div class="mx-3">Introduction</div>
           </div>
+
+
         </ng-template>
         <ng-template ngbPanelContent>
           <app-info></app-info>
+          <button type="button" class="btn btn-primary m-1" (click)="acc.expand('ngb-panel-1')">Next</button>
         </ng-template>
       </ngb-panel>
-      <ngb-panel>
+      <ngb-panel id="ngb-panel-1">
         <ng-template ngbPanelTitle>
           <div class="section-header d-flex">
             <i class="bi bi-people-fill text-primary"></i>
@@ -32,9 +37,11 @@
         </ng-template>
         <ng-template ngbPanelContent>
           <app-who></app-who>
+            <button type="button" class="btn btn-secondary m-1" (click)="acc.expand('ngb-panel-0')">Prev</button>
+            <button type="button" class="btn btn-primary m-1" (click)="acc.expand('ngb-panel-2')">Next</button>
         </ng-template>
       </ngb-panel>
-      <ngb-panel>
+      <ngb-panel id="ngb-panel-2">
         <ng-template ngbPanelTitle>
           <div class="section-header d-flex">
             <i class="bi bi-emoji-laughing-fill text-primary"></i>
@@ -43,9 +50,11 @@
         </ng-template>
         <ng-template ngbPanelContent>
           <app-what></app-what>
+          <button type="button" class="btn btn-secondary m-1" (click)="acc.expand('ngb-panel-1')">Prev</button>
+          <button type="button" class="btn btn-primary m-1" (click)="acc.expand('ngb-panel-3')">Next</button>
         </ng-template>
       </ngb-panel>
-      <ngb-panel>
+      <ngb-panel id="ngb-panel-3">
         <ng-template ngbPanelTitle>
           <div class="section-header d-flex">
             <i class="bi bi-calendar-date-fill text-primary"></i>
@@ -54,9 +63,11 @@
         </ng-template>
         <ng-template ngbPanelContent>
           <app-when></app-when>
+          <button type="button" class="btn btn-secondary m-1 btn-container" (click)="acc.expand('ngb-panel-2')">Prev</button>
+          <button type="button" class="btn btn-primary m-1" (click)="acc.expand('ngb-panel-4')">Next</button>
         </ng-template>
       </ngb-panel>
-      <ngb-panel>
+      <ngb-panel id="ngb-panel-4">
         <ng-template ngbPanelTitle>
           <div class="section-header d-flex">
             <i class="bi bi-pin-map-fill text-primary"></i>
@@ -65,9 +76,11 @@
         </ng-template>
         <ng-template ngbPanelContent>
           <app-where></app-where>
+          <button type="button" class="btn btn-secondary m-1" (click)="acc.expand('ngb-panel-3')">Prev</button>
+          <button type="button" class="btn btn-primary m-1" (click)="acc.expand('ngb-panel-5')">Next</button>
         </ng-template>
       </ngb-panel>
-      <ngb-panel>
+      <ngb-panel id="ngb-panel-5">
         <ng-template ngbPanelTitle>
           <div class="section-header d-flex">
             <i class="bi bi-question-circle-fill text-primary"></i>
@@ -76,6 +89,7 @@
         </ng-template>
         <ng-template ngbPanelContent>
           <app-faqs></app-faqs>
+          <button type="button" class="btn btn-secondary m-1" (click)="acc.expand('ngb-panel-4')">Prev</button>
         </ng-template>
       </ngb-panel>
     </ngb-accordion>
