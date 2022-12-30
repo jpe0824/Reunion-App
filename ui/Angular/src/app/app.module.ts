@@ -10,6 +10,7 @@ import { WhatComponent } from './Pages/what/what.component';
 import { WhenComponent } from './Pages/when/when.component';
 import { WhereComponent } from './Pages/where/where.component';
 import { FaqsComponent } from './Pages/faqs/faqs.component';
+import { InfoComponent } from './Pages/info/info.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FaqsComponent } from './Pages/faqs/faqs.component';
     WhatComponent,
     WhenComponent,
     WhereComponent,
-    FaqsComponent
+    FaqsComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
