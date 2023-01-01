@@ -1,329 +1,334 @@
-<ul class="collapseContainer">
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>How is the reunion paid for? Is there something I can do to help or donate?</span>
-            <button
-            class="btn"
-            (click)="collapse1.toggle()"
-            [attr.aria.expanded]="!faq1isCollapsed"
-            aria-controls="collapse1">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse1="ngbCollapse" [(ngbCollapse)]="faq1isCollapsed">
+<div class="faqs">
+    <ul class="collapseContainer">
+        <li>
             <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    Absolutely! The Meldrum reunion held every two years is paid for by donations 100%.
-                    There are expenses that are incurred such as the building and rafts that come out of the
-                    Meldrum reunion fund. To replenish this and to have funds for the next reunion, we will hold
-                    a silent auction at the main event where all of us can bring items and services to sale to
-                    raise money for the fund. Of course, the fund will also accept cash donations too. The goal
-                    is to replenish everything that was spent in this reunion. So PLEASE be generous so this
-                    wonderful tradition can continue.
-                </p>
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>How is the reunion paid for? Is there something I can do to help or donate?</span>
+                <button
+                class="btn"
+                (click)="collapse1.toggle()"
+                [attr.aria.expanded]="!faq1isCollapsed"
+                aria-controls="collapse1">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
             </div>
-
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>Does the reunion fund cover my lodging costs?</span>
-            <button
-            class="btn"
-            (click)="collapse2.toggle()"
-            [attr.aria.expanded]="!faq2isCollapsed"
-            aria-controls="collapse2">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse2="ngbCollapse" [(ngbCollapse)]="faq2isCollapsed">
-            <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    No, lodging will be on an individual/family basis, and each group will need to pay for their
-                    own accommodations. Whether that by camping or hotel. Please see below for lodging
-                    options.
-                </p>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>Are these donations tax deductible?</span>
-            <button
-            class="btn"
-            (click)="collapse3.toggle()"
-            [attr.aria.expanded]="!faq3isCollapsed"
-            aria-controls="collapse3">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse3="ngbCollapse" [(ngbCollapse)]="faq3isCollapsed">
-            <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    Unfortunately no. The Meldrum fund is not a qualified charitable organization that is
-                    required for donations to be tax deductible.
-                </p>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>Will I be blessed for making donations to the fund?</span>
-            <button
-            class="btn"
-            (click)="collapse4.toggle()"
-            [attr.aria.expanded]="!faq4isCollapsed"
-            aria-controls="collapse4">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse4="ngbCollapse" [(ngbCollapse)]="faq4isCollapsed">
-            <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    Yes, yes for sure you will be blessed.
-                </p>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>Where can I stay? In the past, the reunion was gathered in one place. I will miss
-                that. What options do I have?</span>
-            <button
-            class="btn"
-            (click)="collapse5.toggle()"
-            [attr.aria.expanded]="!faq5isCollapsed"
-            aria-controls="collapse5">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse5="ngbCollapse" [(ngbCollapse)]="faq5isCollapsed">
-            <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    This is something that we were concerned about, and we did want to follow that format.
-                    However, as the family continues to grow exponentially, we thought this format might work
-                    for different reasons. Many liked what we did last reunion where we only met for one day.
-                    That is still a possibility with this format. You can come just for Saturday and return the
-                    same day. But we also have other activities you are able to participate in if that is in your
-                    budget and schedule. We are working with a hotel in Green River to reserve a block of
-                    rooms at a discounted price. This will allow a group of the family to lodge in the same place
-                    much like we did at the Ruby Inn. If you prefer to camp, there are multiple option available
-                    in the area. Within the city limits of Rock Springs, there is a KOA campground. Or just a
-                    small drive south there are multiple campgrounds that are close along the Green
-                    River/Gorge, which of course would put you even closer to the Flaming Gorge activity. We
-                    will keep you updated on the price of hotel arrangements that we are able to negotiate and
-                    available campgrounds. Of course, in any case, it is wise to reserve your accommodations
-                    early.
-                </p>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>I want to come for the three days, but I’d rather do other things during the day and
-                meet up with everybody each evening for the dinners in the parks. What is there to
-                do around the area?</span>
-            <button
-            class="btn"
-            (click)="collapse6.toggle()"
-            [attr.aria.expanded]="!faq6isCollapsed"
-            aria-controls="collapse6">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse6="ngbCollapse" [(ngbCollapse)]="faq6isCollapsed">
-            <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <div>
+            <div #collapse1="ngbCollapse" [(ngbCollapse)]="faq1isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
                     <p>
-                        Great question! And I’m so glad you asked. The area is a great area for
-                        outdoorsmen/women. Here is a list of activities you can do as a day trip (if you are
-                        interested in any of these, you should google to get more information):
+                        Absolutely! The Meldrum reunion held every two years is paid for by donations 100%.
+                        There are expenses that are incurred such as the building and raft rentals that come out of the
+                        Meldrum reunion fund. To replenish this and to have funds for the next reunion, we will hold
+                        a silent auction at the main event where all of us can bring items and services to sale to
+                        raise money for the fund. Of course, the fund will also accept cash donations too. The goal
+                        is to replenish everything that was spent in this reunion. So PLEASE be generous so this
+                        wonderful tradition can continue.
                     </p>
-                    <ul>
-                        <li>
-                            Pilot Butte and Wild Horse scenic loop. I don’t always see the wild horses on this
-                            loop, but more often than not, the herd is nearby which is fascinating. You can hike
-                            and climb Pilot Butte if you are so inclined.
-                        </li>
-                        <li>
-                            For most of you coming from the west (Utah) toward Wyoming, you can take the
-                            Bridger Valley Historical byway on your way to the reunion. It is a 20 mile loop off of
-                            I-80 where all the historical trails met. The crossroads of the California/Oregon Trail,
-                            the Mormon trail, the Pony Express Route, the Transcontinental railroad and the
-                            Lincoln Highway all met here. If you have some extra time on your way to the
-                            reunion, take the loop to see these historical sites. You take Exit 34 off of I-80 and
-                            reconvenes at Exit 48.
-                        </li>
-                        <li>
-                            Three things you can do in one day (if you hurry) or just spend time at one of these.
-                            The White Mountain Petroglyphs, Boar’s Tusk, and the Sand Dunes. About 10 miles
-                            north of Rock Springs off of Highway 191, you will turn off for about 2 miles on dirt
-                            roads to get to the Petroglyphs. You can head to the Boar’s Tusk and even hike and
-                            climb to the top if you’d like, or just spend the day in the Killpecker Sand Dunes. You
-                            can rent (if you don’t own) sleds and/or sandboards and hit the slopes of the sand
-                            dunes. Dune buggies, dirt bikes, and ATV’s make there way from across the county
-                            to hit this popular spot.
-                        </li>
-                        <li>
-                            A short distance to the north is South Pass, which is another historic pioneer site.
-                            There you will encounter Rocky Ridge, one of the gloomiest times for the Martin and
-                            Willie Handcart companies. South Pass has a visitor’s center that you can check
-                            out. And on your way back to Rock Springs/Green River, you can stop at the Farson
-                            merc to get some ice cream like no other. Be careful though, if you order anything
-                            bigger than the baby size. You better have an appetite.
-                        </li>
-                        <li>
-                            Rent a bike or bring your own mountain bike to explore some of the best trails. The
-                            Wilkins Peak Trail System allows mountain bikers of all levels to experience a
-                            unique landscape and challenging ride. Or just take to the lower elevation trails
-                            along the Green River.
-                        </li>
-                        <li>
-                            Rent a boat to explore the Flaming Gorge by water. This is a wonderful activity for a
-                            family day outing.
-                        </li>
-                        <li>
-                            When the group goes to float the Green River, we may have time to do the Sheep
-                            Creek Geological Loop, which has some great views and geological wonders. If not,
-                            you may choose to do this on your own. Just south of Manila Utah.
-                        </li>
-                        <li>
-                            The Western Wyoming Community College in Rock Springs has dinosaur exhibits
-                            throughout the campus along with a Wildlife Museum that is fun for all ages.
-                        </li>
-                        <li>
-                            Spend the day fishing along the Green or other areas. There is endless potential to
-                            explore and to create your ultimate fishing experience.
-                        </li>
-                    </ul>
+                </div>
+
+            </div>
+        </li>
+        <li>
+            <div class="qa">
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>Does the reunion fund cover my lodging costs?</span>
+                <button
+                class="btn"
+                (click)="collapse2.toggle()"
+                [attr.aria.expanded]="!faq2isCollapsed"
+                aria-controls="collapse2">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
+            </div>
+            <div #collapse2="ngbCollapse" [(ngbCollapse)]="faq2isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        No, lodging will be on an individual/family basis, and each group will need to pay for their
+                        own accommodations. Whether that by camping or hotel. Please see below for lodging
+                        options.
+                    </p>
                 </div>
             </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>So what is the food situation? Will I be expected to provide meals for my
-                family/group for the entire reunion?</span>
-            <button
-            class="btn"
-            (click)="collapse7.toggle()"
-            [attr.aria.expanded]="!faq7isCollapsed"
-            aria-controls="collapse7">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse7="ngbCollapse" [(ngbCollapse)]="faq7isCollapsed">
+        </li>
+        <li>
             <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    We are attempting to make this as convenient as possible for everyone. And each day is a
-                    little different. On Day 1 with Martin’s Cove, you will need to provide for your own breakfast
-                    and pack a lunch that we will eat on the Trail. Dinner will then be provided that evening.
-                    Each family (of the 6 family groups) will have a meal assignment. The first assignment will
-                    be Thursday evening in a park in Rock Springs. Let me know in advance, and that family
-                    can have access to a mobile BBQ trailer, or you can do your own thing. Maybe a Dutch
-                    John dinner or whatever your heart desires. It is up to each family to plan for the evening
-                    meals. Assignments have not yet been made, but we will make those assignments soon.
-                    Day 2 at the Gorge, you will need to provide for your own breakfast only. Lunch will be
-                    provided by the reunion with hamburgers and hot dogs. That evening, we will be having
-                    dinner in another park in Green River. The mobile BBQ trailer will be available if the family
-                    would like. Day 3 will be at Expedition Island and a family will be assigned to breakfast and
-                    a family will be assigned to lunch. The Pavilion building that we reserved has a commercial
-                    kitchen that can be utilized for these two meals.
-                </p>
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>Are these donations tax deductible?</span>
+                <button
+                class="btn"
+                (click)="collapse3.toggle()"
+                [attr.aria.expanded]="!faq3isCollapsed"
+                aria-controls="collapse3">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
             </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>I want to participate in the reunion all 3 days, but I am very limited in my mobility. Is
-                there anything for me?</span>
-            <button
-            class="btn"
-            (click)="collapse8.toggle()"
-            [attr.aria.expanded]="!faq8isCollapsed"
-            aria-controls="collapse8">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse8="ngbCollapse" [(ngbCollapse)]="faq8isCollapsed">
+            <div #collapse3="ngbCollapse" [(ngbCollapse)]="faq3isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        Unfortunately no. The Meldrum fund is not a qualified charitable organization that is
+                        required for donations to be tax deductible.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
             <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    Yes, absolutely! Martin’s Cove has a wonderful visitor’s center and you could easily spend
-                    the entire time there if you don’t want to or are unable to go on the hike. If you are able to
-                    make a small hike of a quarter mile, you could still go check out Devil’s Gate. If you don’t
-                    want to float the river, there are many other things we will be doing that you can participate
-                    in. We can drive to the picnic area where the rafts will end up for the picnic lunch, and the
-                    other sites are all accessed by vehicle. Day 3 will be spent most of the day in the Pavilion
-                    building. So please come! There is plenty for you to do.
-                </p>
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>Will I be blessed for making donations to the fund?</span>
+                <button
+                class="btn"
+                (click)="collapse4.toggle()"
+                [attr.aria.expanded]="!faq4isCollapsed"
+                aria-controls="collapse4">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
             </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>I want to float the river, but I am afraid of the rapids. Is this a calm float?</span>
-            <button
-            class="btn"
-            (click)="collapse10.toggle()"
-            [attr.aria.expanded]="!faq10isCollapsed"
-            aria-controls="collapse10">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse10="ngbCollapse" [(ngbCollapse)]="faq10isCollapsed">
+            <div #collapse4="ngbCollapse" [(ngbCollapse)]="faq4isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        Yes, yes for sure you will be blessed.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
             <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    It is a very calm float. And is very relaxing. But there are a couple of areas of white water
-                    that you should be careful with. Everyone will be required to wear a life jacket by law. I
-                    have floated the river many times, and I would put me as a very cautious person. I did hold
-                    on tight in the small areas of rapids, but it was very fun. The views of the float are
-                    breathtaking, and I highly recommend you to float the river.
-                </p>
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>Where can I stay? In the past, the reunion was gathered in one place. I will miss
+                    that. What options do I have?</span>
+                <button
+                class="btn"
+                (click)="collapse5.toggle()"
+                [attr.aria.expanded]="!faq5isCollapsed"
+                aria-controls="collapse5">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
             </div>
-        </div>
-    </li>
-    <li>
-        <div class="qa">
-            <span><strong><em>Q:&emsp;</em></strong></span>
-            <span>We are planning on making a weekend out of the trip, and want to spend the entire
-                day on Saturday in the park. Will dinner be provided?</span>
-            <button
-            class="btn"
-            (click)="collapse4.toggle()"
-            [attr.aria.expanded]="!faq4isCollapsed"
-            aria-controls="collapse4">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-        </div>
-        <div #collapse4="ngbCollapse" [(ngbCollapse)]="faq4isCollapsed">
+            <div #collapse5="ngbCollapse" [(ngbCollapse)]="faq5isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        This is something that we were concerned about, and we did want to follow that format.
+                        However, as the family continues to grow exponentially, we thought this format might work
+                        for different reasons. Many liked what we did last reunion where we only met for one day.
+                        That is still a possibility with this format. You can come just for Saturday and return the
+                        same day. But we also have other activities you are able to participate in if that is in your
+                        budget and schedule. We are working with a hotel in Green River to reserve a block of
+                        rooms at a discounted price. This will allow a group of the family to lodge in the same place
+                        much like we did at the Ruby Inn. If you prefer to camp, there are multiple option available
+                        in the area. Within the city limits of Rock Springs, there is a KOA campground. Or just a
+                        small drive south there are multiple campgrounds that are close along the Green
+                        River/Gorge, which of course would put you even closer to the Flaming Gorge activity. We
+                        will keep you updated on the price of hotel arrangements that we are able to negotiate and
+                        available campgrounds. Of course, in any case, it is wise to reserve your accommodations
+                        early.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
             <div class="qa">
-                <span><strong><em>A:&emsp;</em></strong></span>
-                <p>
-                    If we get enough feedback that people will prefer to spend the entire day on Saturday, we
-                    can reserve the Pavilion for the entire day and arrange for a dinner. Please let me know via
-                    email (edman.paulr@gmail.com) if you are interested in order for me to gage the interest.
-                    At this point, the Pavilion is available to rent for the rest of the day if there is interest to do
-                    so. We can certainly plan for this.
-                </p>
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>I want to come for the three days, but I’d rather do other things during the day and
+                    meet up with everybody each evening for the dinners in the parks. What is there to
+                    do around the area?</span>
+                <button
+                class="btn"
+                (click)="collapse6.toggle()"
+                [attr.aria.expanded]="!faq6isCollapsed"
+                aria-controls="collapse6">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
             </div>
-        </div>
-    </li>
-</ul>
+            <div #collapse6="ngbCollapse" [(ngbCollapse)]="faq6isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <div>
+                        <p>
+                            Great question! And I’m so glad you asked. The area is a great area for
+                            outdoorsmen/women. Here is a list of activities you can do as a day trip (if you are
+                            interested in any of these, you should google to get more information):
+                        </p>
+                        <ul>
+                            <li>
+                                Pilot Butte and Wild Horse scenic loop. I don’t always see the wild horses on this
+                                loop, but more often than not, the herd is nearby which is fascinating. You can hike
+                                and climb Pilot Butte if you are so inclined.
+                            </li>
+                            <li>
+                                For most of you coming from the west (Utah) toward Wyoming, you can take the
+                                Bridger Valley Historical byway on your way to the reunion. It is a 20 mile loop off of
+                                I-80 where all the historical trails met. The crossroads of the California/Oregon Trail,
+                                the Mormon trail, the Pony Express Route, the Transcontinental railroad and the
+                                Lincoln Highway all met here. If you have some extra time on your way to the
+                                reunion, take the loop to see these historical sites. You take Exit 34 off of I-80 and
+                                reconvenes at Exit 48.
+                            </li>
+                            <li>
+                                Three things you can do in one day (if you hurry) or just spend time at one of these.
+                                The White Mountain Petroglyphs, Boar’s Tusk, and the Sand Dunes. About 10 miles
+                                north of Rock Springs off of Highway 191, you will turn off for about 2 miles on dirt
+                                roads to get to the Petroglyphs. You can head to the Boar’s Tusk and even hike and
+                                climb to the top if you’d like, or just spend the day in the Killpecker Sand Dunes. You
+                                can rent (if you don’t own) sleds and/or sandboards and hit the slopes of the sand
+                                dunes. Dune buggies, dirt bikes, and ATV’s make there way from across the county
+                                to hit this popular spot.
+                            </li>
+                            <li>
+                                A short distance to the north is South Pass, which is another historic pioneer site.
+                                There you will encounter Rocky Ridge, one of the gloomiest times for the Martin and
+                                Willie Handcart companies. South Pass has a visitor’s center that you can check
+                                out. And on your way back to Rock Springs/Green River, you can stop at the Farson
+                                merc to get some ice cream like no other. Be careful though, if you order anything
+                                bigger than the baby size. You better have an appetite.
+                            </li>
+                            <li>
+                                Rent a bike or bring your own mountain bike to explore some of the best trails. The
+                                Wilkins Peak Trail System allows mountain bikers of all levels to experience a
+                                unique landscape and challenging ride. Or just take to the lower elevation trails
+                                along the Green River.
+                            </li>
+                            <li>
+                                Rent a boat to explore the Flaming Gorge by water. This is a wonderful activity for a
+                                family day outing.
+                            </li>
+                            <li>
+                                When the group goes to float the Green River, we may have time to do the Sheep
+                                Creek Geological Loop, which has some great views and geological wonders. If not,
+                                you may choose to do this on your own. Just south of Manila Utah.
+                            </li>
+                            <li>
+                                The Western Wyoming Community College in Rock Springs has dinosaur exhibits
+                                throughout the campus along with a Wildlife Museum that is fun for all ages.
+                            </li>
+                            <li>
+                                Spend the day fishing along the Green or other areas. There is endless potential to
+                                explore and to create your ultimate fishing experience.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="qa">
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>So what is the food situation? Will I be expected to provide meals for my
+                    family/group for the entire reunion?</span>
+                <button
+                class="btn"
+                (click)="collapse7.toggle()"
+                [attr.aria.expanded]="!faq7isCollapsed"
+                aria-controls="collapse7">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
+            </div>
+            <div #collapse7="ngbCollapse" [(ngbCollapse)]="faq7isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        We are attempting to make this as convenient as possible for everyone. And each day is a
+                        little different. On Day 1 with Martin’s Cove, you will need to provide for your own breakfast
+                        and pack a lunch that we will eat on the Trail. Dinner will then be provided that evening.
+                        Each family (of the 6 family groups) will have a meal assignment. The first assignment will
+                        be Thursday evening in a park in Rock Springs. Let me know in advance, and that family
+                        can have access to a mobile BBQ trailer, or you can do your own thing. Maybe a Dutch
+                        John dinner or whatever your heart desires. It is up to each family to plan for the evening
+                        meals. Assignments have not yet been made, but we will make those assignments soon.
+                        Day 2 at the Gorge, you will need to provide for your own breakfast only. Lunch will be
+                        provided by the reunion with hamburgers and hot dogs. That evening, we will be having
+                        dinner in another park in Green River. The mobile BBQ trailer will be available if the family
+                        would like. Day 3 will be at Expedition Island and a family will be assigned to breakfast and
+                        a family will be assigned to lunch. The Pavilion building that we reserved has a commercial
+                        kitchen that can be utilized for these two meals.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="qa">
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>I want to participate in the reunion all 3 days, but I am very limited in my mobility. Is
+                    there anything for me?</span>
+                <button
+                class="btn"
+                (click)="collapse8.toggle()"
+                [attr.aria.expanded]="!faq8isCollapsed"
+                aria-controls="collapse8">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
+            </div>
+            <div #collapse8="ngbCollapse" [(ngbCollapse)]="faq8isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        Yes, absolutely! Martin’s Cove has a wonderful visitor’s center and you could easily spend
+                        the entire time there if you don’t want to or are unable to go on the hike. If you are able to
+                        make a small hike of a quarter mile, you could still go check out Devil’s Gate. If you don’t
+                        want to float the river, there are many other things we will be doing that you can participate
+                        in. We can drive to the picnic area where the rafts will end up for the picnic lunch, and the
+                        other sites are all accessed by vehicle. Day 3 will be spent most of the day in the Pavilion
+                        building. So please come! There is plenty for you to do.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="qa">
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>I want to float the river, but I am afraid of the rapids. Is this a calm float?</span>
+                <button
+                class="btn"
+                (click)="collapse10.toggle()"
+                [attr.aria.expanded]="!faq10isCollapsed"
+                aria-controls="collapse10">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
+            </div>
+            <div #collapse10="ngbCollapse" [(ngbCollapse)]="faq10isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        It is a very calm float. And is very relaxing. But there are a couple of areas of white water
+                        that you should be careful with. Everyone will be required to wear a life jacket by law. I
+                        have floated the river many times, and I would put me as a very cautious person. I did hold
+                        on tight in the small areas of rapids, but it was very fun. The views of the float are
+                        breathtaking, and I highly recommend you to float the river.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="qa">
+                <span><strong><em>Q:&emsp;</em></strong></span>
+                <span>We are planning on making a weekend out of the trip, and want to spend the entire
+                    day on Saturday in the park. Will dinner be provided?</span>
+                <button
+                class="btn"
+                (click)="collapse4.toggle()"
+                [attr.aria.expanded]="!faq4isCollapsed"
+                aria-controls="collapse4">
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
+            </div>
+            <div #collapse4="ngbCollapse" [(ngbCollapse)]="faq4isCollapsed">
+                <div class="qa">
+                    <span><strong><em>A:&emsp;</em></strong></span>
+                    <p>
+                        If we get enough feedback that people will prefer to spend the entire day on Saturday, we
+                        can reserve the Pavilion for the entire day and arrange for a dinner. Please let me know via
+                        email (edman.paulr@gmail.com) if you are interested in order for me to gage the interest.
+                        At this point, the Pavilion is available to rent for the rest of the day if there is interest to do
+                        so. We can certainly plan for this.
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div>
+        For any additional questions feel free to reach out to Paul Edman via <a href="mailto:edman.paulr@gmail.com">email</a>.
+    </div>
+</div>
